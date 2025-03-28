@@ -33,7 +33,8 @@ def run_make_setup_full():
     
     try:
         os.chdir(vortex_dir)
-        subprocess.check_call(['make', 'setup-full'], env=env)
+        print("Skipping   subprocess.check_call(['make', 'setup-full'], env=env)")
+        # subprocess.check_call(['make', 'setup-full'], env=env)
     finally:
         os.chdir(original_dir)
 
